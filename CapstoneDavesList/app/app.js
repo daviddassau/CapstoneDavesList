@@ -1,9 +1,10 @@
-﻿var app = angular.module("DavesList", ["ngRoute"]);
+﻿var app = angular.module("CapstoneDavesList", ["ngRoute"]);
 
 app.config(["$routeProvider", function ($routeProvider) {
-    $routeProvider.when("/",
+    $routeProvider
+        .when("/",
         {
             templateUrl: "/app/partials/index.html",
             controller: "HomeController"
-        })
+        });
 }]);
