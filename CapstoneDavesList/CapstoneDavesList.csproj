@@ -113,6 +113,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.js" />
     <Content Include="app\controllers\HomeController.js" />
     <Content Include="app\partials\index.html" />
     <Content Include="Content\bootstrap-grid.css" />
