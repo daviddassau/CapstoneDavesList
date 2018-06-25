@@ -1,4 +1,4 @@
-# Dave's List - Final Capstone
+# Dave's List
 
 Dave's List is my final capstone project for the back-end of Nashville Software School.
 
