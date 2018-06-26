@@ -3,6 +3,9 @@
 **Dave's List** is a directory that allows site visitors to discover online retailers that specialize in products that are responsibly made.
 
 ### What do you mean by "Responsibly Made"?
+When we say that these retailers offer products that are made responsibly, we mean that they could meet any of the following criteria:
+- Made from 100% recycled material
+- asdf
 
 Dave's List is my final capstone project for the back-end of Nashville Software School.
 
