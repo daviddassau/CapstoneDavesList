@@ -16,6 +16,8 @@ namespace CapstoneDavesList.Controllers
         {
             var categoryRepository = new CategoryRepository();
             var allCategories = categoryRepository.GetAllCategories();
+
+            return Request.CreateResponse(HttpStatusCode.OK, allCategories);
         }
     }
 }

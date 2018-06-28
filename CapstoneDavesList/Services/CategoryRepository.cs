@@ -18,7 +18,17 @@ namespace CapstoneDavesList.Services
 
         public IEnumerable<CategoryDto> GetAllCategories()
         {
-            throw new NotImplementedException();
+            using (var db = CreateConnection())
+            {
+                db.Open();
+
+                var allCategories = db.Query<CategoryDto>(@"SELECT c.Id, c.CategoryName, rc.CategoryId, rc.RetailerId, r.Name
+                                                            FROM Category c
+                                                            JOIN RetailerCategory rc on rc.CategoryId = c.Id
+                                                            JOIN Retailer r on r.Id = rc.RetailerId");
+
+                return allCategories;
+            }
         }
     }
 }
