@@ -16,6 +16,8 @@ namespace CapstoneDavesList.Controllers
         {
             var retailerRepository = new RetailerRepository();
             var allRetailers = retailerRepository.GetAllRetailers();
+
+            return Request.CreateResponse(HttpStatusCode.OK, allRetailers);
         }
     }
 }
