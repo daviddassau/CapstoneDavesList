@@ -19,5 +19,14 @@ namespace CapstoneDavesList.Controllers
 
             return Request.CreateResponse(HttpStatusCode.OK, allRetailers);
         }
+
+        [HttpGet, Route("{id}")]
+        public HttpResponseMessage GetSingleRetailer(int id)
+        {
+            var retailerRepository = new RetailerRepository();
+            var singleRetailer = retailerRepository.GetSingleRetailer(id);
+
+            return Request.CreateResponse(HttpStatusCode.OK, singleRetailer);
+        }
     }
 }

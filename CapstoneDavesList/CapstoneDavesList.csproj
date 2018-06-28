@@ -200,6 +200,7 @@
     </Compile>
     <Compile Include="Models\CategoryDto.cs" />
     <Compile Include="Models\RetailerDto.cs" />
+    <Compile Include="Models\RetailerSingleDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CategoryRepository.cs" />
     <Compile Include="Services\RetailerRepository.cs" />
