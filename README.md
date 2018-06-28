@@ -5,9 +5,9 @@
 ### What do you mean by "Responsibly Made"?
 When we say that these retailers offer products that are made responsibly, we mean that they could meet any of the following criteria:
 - Made from 100% recycled material
-- asdf
-
-Dave's List is my final capstone project for the back-end of Nashville Software School.
+- Made from locally sourced material
+- Beauty items that are cruelty-free
+- Food/Grocery items that are organic, and truly made from the best stuff on Earth.
 
 The app is an API that users can utilize to find both online and brick-and-mortar companies that specialize in products that are made from 100% recycled material, locally sourced, hand-made, cruelty-free, etc. The information that their search results will give them will be:
 1. Retailer's name
