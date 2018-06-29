@@ -19,5 +19,14 @@ namespace CapstoneDavesList.Controllers
 
             return Request.CreateResponse(HttpStatusCode.OK, allCategories);
         }
+
+        [HttpGet, Route("{id}")]
+        public HttpResponseMessage GetSingleCategory(int id)
+        {
+            var categoryRepository = new CategoryRepository();
+            var singleCategory = categoryRepository.GetSingleCategory(id);
+
+            return Request.CreateResponse(HttpStatusCode.OK, singleCategory);
+        }
     }
 }

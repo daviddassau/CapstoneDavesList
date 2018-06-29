@@ -20,4 +20,12 @@ JOIN Category c on c.Id = rc.CategoryId
 WHERE r.Id = 1
 
 
+--Get single category and its corresponding retailer(s)
+SELECT c.Id, c.CategoryName, rc.CategoryId, rc.RetailerId, r.Name
+FROM Category c
+JOIN RetailerCategory rc on rc.CategoryId = c.Id
+JOIN Retailer r on r.Id = rc.RetailerId
+WHERE c.Id = 3
+
+
 
