@@ -30,5 +30,21 @@ namespace CapstoneDavesList.Services
                 return allCategories;
             }
         }
+
+        public IEnumerable<CategorySingleDto> GetSingleCategory(int id)
+        {
+            using (var db = CreateConnection())
+            {
+                db.Open();
+
+                var singleCategory = db.Query<CategorySingleDto>(@"SELECT c.Id, c.CategoryName, rc.CategoryId, rc.RetailerId, r.Name
+                                                                                 FROM Category c
+                                                                                 JOIN RetailerCategory rc on rc.CategoryId = c.Id
+                                                                                 JOIN Retailer r on r.Id = rc.RetailerId
+                                                                                 WHERE rc.CategoryId = @Id", new { id });
+
+                return singleCategory;
+            }
+        }
     }
 }

@@ -199,6 +199,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CategoryDto.cs" />
+    <Compile Include="Models\CategorySingleDto.cs" />
     <Compile Include="Models\RetailerDto.cs" />
     <Compile Include="Models\RetailerSingleDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
